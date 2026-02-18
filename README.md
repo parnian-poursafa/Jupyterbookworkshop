@@ -1,7 +1,7 @@
 ![logo](lecture/static/logo.png)
 
-
-making chnagesss
+## "What is the aim?"
+Here we are trying to make a decision tree to guide you through running a GWAS
 
 
 ## "What's in this repository?"
