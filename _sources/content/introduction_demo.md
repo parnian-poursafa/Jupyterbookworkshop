@@ -23,3 +23,9 @@ if you have any concerns about the imputation, please check : {doc}`../1_github/
 ___
 # Who are we?
 for more information about our group please check: [BG UNIT](https://www.aesthetics.mpg.de/en/research/department-of-cognitive-neuropsychology/behavior-genetics-unit.html)
+___
+## Running code
+%matplotlib inline
+
+import numpy as np
+import matplotlib.pyplot as plt
