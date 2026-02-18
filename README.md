@@ -1,6 +1,9 @@
 ![logo](lecture/static/logo.png)
 
 
+making chnagesss
+
+
 ## "What's in this repository?"
 
 This is a minimalistic template repository for creating online courses in higher education created for the [DiLER](https://diler-digitell.github.io/examples.html) (Digital Literacy for Empirical Research) project, financed by [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) (Goethe-University Frankfurt).
