@@ -6,6 +6,8 @@ chapters:
 - file: general_information/intro
 - file: content/intro_content
 - file: content/introduction_demo
+- file: content/intro_subject
+- file: content/intro_geno
   sections:
   - file: content/static_content
   - file: content/interactive_notebook
