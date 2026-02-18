@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Preparing for running a Meta-GWAS</title>
+    <title>2. INSTRUCTIONS FOR GENOTYPES &amp; IMPUTATION &#8212; Preparing for running a Meta-GWAS</title>
   
   
   
@@ -64,7 +64,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Content I" href="static_content.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="intro_subject.html" />
+    <link rel="prev" title="1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES &amp; COVARIATES" href="intro_subject.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,7 +182,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../general_information/overview.html">Course overview &amp; procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general_information/setup.html">Setup for the course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general_information/intro.html">Intro</a></li>
@@ -190,8 +190,12 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction_demo.html">Hallucino-Genes Consortium</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="static_content.html">Content I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="interactive_notebook.html">Content II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro_subject.html">1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES &amp; COVARIATES</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">2. INSTRUCTIONS FOR GENOTYPES &amp; IMPUTATION</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="static_content.html">Content I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive_notebook.html">Content II</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../general_information/CoC.html">Code of Conduct</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general_information/dei.html">Diversity, Equity and Inclusion</a></li>
 </ul>
@@ -396,11 +400,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>2. INSTRUCTIONS FOR GENOTYPES & IMPUTATION</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-imputation-quality-control-qc">Pre-imputation Quality Control (QC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gwas-studies-also-remove-subjects-with">GWAS studies also remove subjects with:</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -410,24 +423,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>##2. INSTRUCTIONS FOR GENOTYPES &amp; IMPUTATION</p>
+  <section id="instructions-for-genotypes-imputation">
+<h1>2. INSTRUCTIONS FOR GENOTYPES &amp; IMPUTATION<a class="headerlink" href="#instructions-for-genotypes-imputation" title="Permalink to this heading">#</a></h1>
 <p>###General genotype properties
 Genotypes must be obtained from micro-array chips that ensure genome-wide coverage (i.e., &gt; ~200,000 genome-wide SNPs). The genotypes must be in build 37/hg19 and on the forward strand. If you are unsure which strand your genotypes are on this website can help you: <a class="reference external" href="https://www.well.ox.ac.uk/%7Ewrayner/strand/">https://www.well.ox.ac.uk/~wrayner/strand/</a>. If you have multiple arrays in the same study, make sure you merge the datasets prior to imputation and make sure that you include the different arrays as covariates in the GWAS analysis as dummy variables.</p>
-<p>###Pre-imputation Quality Control (QC)
-We assume that your genotypes have been extensively QCed. Typically, GWAS studies exclude SNPs from further analysis (or imputation) with:
+<section id="pre-imputation-quality-control-qc">
+<h2>Pre-imputation Quality Control (QC)<a class="headerlink" href="#pre-imputation-quality-control-qc" title="Permalink to this heading">#</a></h2>
+<p>We assume that your genotypes have been extensively QCed. Typically, GWAS studies exclude SNPs from further analysis (or imputation) with:
 •	Minor allele frequency &lt;1%
 •	Call rate &lt;95% or &lt;99%
 •	HWE p &lt; 1e-6
 •	Known to have evidence of poor clustering on visual inspection of intensity plots</p>
-<p>###GWAS studies also remove subjects with:
-•	Low overall call rates (&lt; 95%)
+</section>
+<section id="gwas-studies-also-remove-subjects-with">
+<h2>GWAS studies also remove subjects with:<a class="headerlink" href="#gwas-studies-also-remove-subjects-with" title="Permalink to this heading">#</a></h2>
+<p>•	Low overall call rates (&lt; 95%)
 •	Excess autosomal heterozygosity or homozygosity (indicating genotyping errors or excessive inbreeding), usually with F &lt; -.1 or F &gt; .1 (see <a class="reference external" href="http://zzz.bwh.harvard.edu/plink/ibdibs.shtml#inbreeding">http://zzz.bwh.harvard.edu/plink/ibdibs.shtml#inbreeding</a> for more info on the inbreeding coefficient F)
 •	Duplicate samples
 •	Unintended 1st or 2nd degree relatives in case of a sample of unrelated individuals
 •	Wrong gender (excessive X-chromosome homozygosity in males)
 •	Chromosome abnormalities, such as XXY’s, etc.</p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -465,7 +484,7 @@ We assume that your genotypes have been extensively QCed. Typically, GWAS studie
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES &amp; COVARIATES</p>
       </div>
     </a>
     <a class="right-next"
@@ -483,6 +502,22 @@ We assume that your genotypes have been extensively QCed. Typically, GWAS studie
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-imputation-quality-control-qc">Pre-imputation Quality Control (QC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gwas-studies-also-remove-subjects-with">GWAS studies also remove subjects with:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Preparing for running a Meta-GWAS</title>
+    <title>1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES &amp; COVARIATES &#8212; Preparing for running a Meta-GWAS</title>
   
   
   
@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/intro_subject';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="intro_geno.html" />
+    <link rel="next" title="2. INSTRUCTIONS FOR GENOTYPES &amp; IMPUTATION" href="intro_geno.html" />
     <link rel="prev" title="Hallucino-Genes Consortium" href="introduction_demo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -182,7 +182,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../general_information/overview.html">Course overview &amp; procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general_information/setup.html">Setup for the course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general_information/intro.html">Intro</a></li>
@@ -190,8 +190,12 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction_demo.html">Hallucino-Genes Consortium</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="static_content.html">Content I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="interactive_notebook.html">Content II</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES &amp; COVARIATES</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="intro_geno.html">2. INSTRUCTIONS FOR GENOTYPES &amp; IMPUTATION</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="static_content.html">Content I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive_notebook.html">Content II</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../general_information/CoC.html">Code of Conduct</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general_information/dei.html">Diversity, Equity and Inclusion</a></li>
 </ul>
@@ -396,7 +400,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES & COVARIATES</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -405,9 +409,11 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inclusion">Inclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phenotypes">Phenotypes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#covariates">Covariates</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -418,13 +424,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES &amp; COVARIATES</p>
-<p>###Inclusion
-We propose to perform analyses on homogeneous groups of subjects with the same ancestry  (based on genetic principal components). If you have multiple ancestries within your dataset, please separate them and run separate GWASs for each ancestral group. Only include subjects who have used cannabis at least once during their lifetime in the analyses. Subjects who have never used cannabis should be excluded from the analyses.</p>
-<p>###Phenotypes
-Please refer to the instructions sent to your group (see Instructions on how to analyse the phenotype.docx)</p>
-<p>###Covariates
-Please use these variables as a covariate in your GWAS analysis:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="instructions-for-subject-inclusion-phenotypes-covariates">
+<h1>1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES &amp; COVARIATES<a class="headerlink" href="#instructions-for-subject-inclusion-phenotypes-covariates" title="Permalink to this heading">#</a></h1>
+<section id="inclusion">
+<h2>Inclusion<a class="headerlink" href="#inclusion" title="Permalink to this heading">#</a></h2>
+<p>We propose to perform analyses on homogeneous groups of subjects with the same ancestry  (based on genetic principal components). If you have multiple ancestries within your dataset, please separate them and run separate GWASs for each ancestral group. Only include subjects who have used cannabis at least once during their lifetime in the analyses. Subjects who have never used cannabis should be excluded from the analyses.</p>
+</section>
+<section id="phenotypes">
+<h2>Phenotypes<a class="headerlink" href="#phenotypes" title="Permalink to this heading">#</a></h2>
+<p>Please refer to the instructions sent to your group (see Instructions on how to analyse the phenotype.docx)</p>
+</section>
+<section id="covariates">
+<h2>Covariates<a class="headerlink" href="#covariates" title="Permalink to this heading">#</a></h2>
+<p>Please use these variables as a covariate in your GWAS analysis:</p>
 <ul class="simple">
 <li><p>Age at the time of the phenotypic assessment (in years since birth).</p></li>
 <li><p>Sex coded as 1=male, 2=female (to be used in the analysis including both males and females).</p></li>
@@ -436,6 +448,8 @@ Include the dummy variables as covariates in the GWAS analyses.</p></li>
 <li><p>Population structure: please correct for population structure by including genetic PCs as covariates (include 20 PCs or the number of PCs that is suitable for your sample).</p></li>
 <li><p>If necessary, add study-specific covariates, e.g., site or batch effects.</p></li>
 </ul>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -481,7 +495,7 @@ Include the dummy variables as covariates in the GWAS analyses.</p></li>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">2. INSTRUCTIONS FOR GENOTYPES &amp; IMPUTATION</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -500,9 +514,11 @@ Include the dummy variables as covariates in the GWAS analyses.</p></li>
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inclusion">Inclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phenotypes">Phenotypes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#covariates">Covariates</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
