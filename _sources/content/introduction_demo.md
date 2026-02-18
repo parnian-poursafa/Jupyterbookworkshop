@@ -14,3 +14,12 @@ Here is a note, pay attention to the relativeness of your smaple
 ```{dropdown} Congratulations!
 Here is the content of my dropdown
 ```
+```{tip}
+Save the descriptives based both for related and unrelated samples.
+```
+___
+# Recap:
+if you have any concerns about the imputation, please check : {doc}`../1_github/intro`
+___
+# Who are we?
+for more information about our group please check: [BG UNIT](https://www.aesthetics.mpg.de/en/research/department-of-cognitive-neuropsychology/behavior-genetics-unit.html)
