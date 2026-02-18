@@ -1,12 +1,12 @@
-#1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES & COVARIATES
+# 1. INSTRUCTIONS FOR SUBJECT INCLUSION, PHENOTYPES & COVARIATES
 
-###Inclusion
+### Inclusion
 We propose to perform analyses on homogeneous groups of subjects with the same ancestry  (based on genetic principal components). If you have multiple ancestries within your dataset, please separate them and run separate GWASs for each ancestral group. Only include subjects who have used cannabis at least once during their lifetime in the analyses. Subjects who have never used cannabis should be excluded from the analyses. 
 
-###Phenotypes
+### Phenotypes
 Please refer to the instructions sent to your group (see Instructions on how to analyse the phenotype.docx)
 
-###Covariates
+### Covariates
 Please use these variables as a covariate in your GWAS analysis:
 
 -	Age at the time of the phenotypic assessment (in years since birth).
