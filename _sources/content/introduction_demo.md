@@ -25,7 +25,10 @@ ___
 for more information about our group please check: [BG UNIT](https://www.aesthetics.mpg.de/en/research/department-of-cognitive-neuropsychology/behavior-genetics-unit.html)
 ___
 ## Running code
+```{code-cell} ipython3
 %matplotlib inline
 
 import numpy as np
 import matplotlib.pyplot as plt
+```
+
